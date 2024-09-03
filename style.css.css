@@ -1,0 +1,121 @@
+/* style.css */
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    transition: transform 1s ease-in-out;
+}
+
+.page.hidden {
+    transform: translateX(100%);
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 16px;
+}
+
+.input-container {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.input-container input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: not-allowed;
+}
+
+.button.active {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.otp-container,
+.pin-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.otp-box,
+.pin-box {
+    margin: 0 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.loading {
+    margin-top: 20px;
+    width: 40px;
+    height: 40

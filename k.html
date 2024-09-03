@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANA</title>
+    <link rel="stylesheet" href="data/style.css.css">
+</head>
+
+<body>
+    <div id="page1" class="page">
+        <div class="logo"><img src="data/img/dana_logo.png" alt=""></div>
+    </div>
+    <script>
+        setInterval(showNextPage); // ganti halaman aetiap 30 detik
+    </script>
+
+    <div id="page2" class="page hidden">
+        <div>
+            <div class="logo"><img src="data/img/dana_logo.png" alt=""></div>
+            <div class="small-text">2.64.0</div>
+            <div class="footer">
+                <img src="data/img/bi.png" alt="Bank Indonesia">
+                <img src="data/img/kom.png" alt="Kominfo">DANA Indonesia terdaftar dan diawasi oleh Bank Indonesia dan
+                Kominfo</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page3" class="page hidden">
+        <div>
+            <div class="logo"><img src="data/img/dana_logo.png" alt=""></div>
+            <div class="info">
+                <p>Masukkan nomor HP kamu untuk lanjut</p>
+            </div>
+            <div class="input-container">
+                <label for="phone">+62</label>
+                <input type="tel" id="phone" placeholder="+62 811-1234-5678">
+            </div>
+            <div class="small-text">
+                Kami akan menggunakan nomor HP ini sebagai ID kamu dan untuk mengamankan akun kamu.
+                Dengan melanjutkan, kamu juga setuju dengan S&K serta Kebijakan Privasi kami.
+            </div>
+            <button id="nextButton" class="button">LANJUT</button>
+        </div>
+    </div>
+
+    <script src="data/script.js"></script>
+</body>
+
+</html>
